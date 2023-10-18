@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Responsive Demo</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .header{
+            background-color: chocolate;
+            color: white;
+            text-align: center;
+            padding: 1% 5%;
+            font-size: 1.5rem;
+        }
+
+        .nav-menu{
+            background-color: #39a4a3;
+            padding: 1% 5%;
+            
+        }
+
+        .nav-menu a{
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px;
+            display: block;
+        }
+
+        .nav-menu a:hover{
+            background-color: gray;
+        }
+
+        .main{
+            padding: 1% 5%;
+            background-color: #4084ac;
+        }
+        .main h1{
+            text-align: center;
+        }
+
+        .aside{
+            background-color: #39864c;
+            padding: 1% 5%;
+            text-align: center;
+        }
+
+
+        .footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8rem;
+        }
+
+        /* for mobile */
+        [class*="col-"]{
+                width: 100%;
+            }
+
+         .nav-menu a{
+            text-align: center;
+            background-color: #3840ca;
+            margin: 10px;
+        }
+
+        
+
+        [class*="col-"]{ 
+            float: left;
+            padding: 10px;
+        }
+
+        * .row::after{ 
+            content: '';
+            clear: both;
+            display: table;
+        }
+
+        @media screen and (min-width:600px){
+
+            /* for tablet */
+            .col-s-1{width:8.33%;}
+            .col-s-2{width: 16.66%;}
+            .col-s-3{width: 25%;}
+            .col-s-4{width: 33.33%;}
+            .col-s-5{width: 41.66%;}
+            .col-s-6{width: 50%;}
+            .col-s-7{width: 58.33%;}
+            .col-s-8{width: 66.66%;}
+            .col-s-9{width: 75%;}
+            .col-s-10{width: 83.33%;}
+            .col-s-11{width: 91.66%;}
+            .col-s-12{width: 100%;}
+
+            .nav-menu a{
+                background-color: #3a464b;
+            }
+        }
+
+        @media screen and (min-width:768px){
+
+            /* for desktop */
+            .col-1{width:8.33%;}
+            .col-2{width: 16.66%;}
+            .col-3{width: 25%;}
+            .col-4{width: 33.33%;}
+            .col-5{width: 41.66%;}
+            .col-6{width: 50%;}
+            .col-7{width: 58.33%;}
+            .col-8{width: 66.66%;}
+            .col-9{width: 75%;}
+            .col-10{width: 83.33%;}
+            .col-11{width: 91.66%;}
+            .col-12{width: 100%;}
+
+            .nav-menu a{
+                background-color: #39a483;
+            }
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <!-- header start -->
+    <div class="header">
+        <h1>Monarul Islam</h1>
+    </div>
+    <!-- header end -->
+
+    <!-- row thim start -->
+    <div class="row">
+
+        <div class="nav-menu col-s-3 col-2">
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+        </div>
+
+        <div class="main col-s-9 col-7">
+            <h1>I am a Web Designer</h1>
+            
+            <p>Lorem ipsum dolor sit amet.</p>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque soluta accusamus earum saepe a fuga.</p>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis accusamus excepturi facere quasi ipsa culpa, eligendi, similique laboriosam perferendis dolor dolore molestias consequatur harum blanditiis quisquam ex iusto. Ex, et.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veritatis, in pariatur soluta laborum eius! Fugit facilis dolorem deserunt eius molestias officia ipsam numquam! Dignissimos distinctio mollitia, fugit nihil molestias consectetur animi magni incidunt enim earum optio aliquam debitis eum ullam vitae at consequatur, iure, tempora et illo obcaecati! Numquam?</p>
+            
+            <p>The list below gives you the 1000 most frequently used English words in alphabetical order. Once you've mastered the shorter vocabulary lists, this is the next step. It would take time to learn the entire list from scratch, but you are probably already familiar with some of these words. Feel free to copy this list into your online flashcard management tool, an app, or print it out to make paper flashcards. You'll have to look up the definitions on your own either in English or in your own language. Good luck improving your English vocabulary!</p>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure doloremque in amet. Unde repellat ad sit repudiandae aliquam ipsum dolorem!</p>
+        </div>
+
+        <div class="aside col-s-12 col-3">
+            <h2>what I love?</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa corrupti necessitatibus quas.</p>
+            
+            <h2>what I do?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum iusto quia rem dolore enim tempora.</p>
+
+            <h2>what I don't love?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo pariatur veritatis reiciendis facere!</p>
+
+            <h2>what I don't do?</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, quasi! Nostrum laudantium aliquam recusandae voluptates quo, eaque ipsa!</p>
+        </div>
+
+    </div>
+
+    <!-- row thim end -->
+
+    <!-- footer start -->
+    <div class="footer">
+        &copy; study with Sujon 2023. Developed by Monarul Islam
+    </div>
+    <!-- footer end -->
+</body>
+</html>
